@@ -1,13 +1,13 @@
 import React from "react";
 
 export const metadata = {
-  title: "Explore | 🍧",
+  title: "Trending | 🔥",
   description: "buy and sell NFT",
   // author: "@ilkinsufi",
 };
 
-const explore = ({ children }) => {
+const trending = ({ children }) => {
   return <div>{children}</div>;
 };
 
-export default explore;
+export default trending;

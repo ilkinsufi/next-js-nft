@@ -1,7 +1,9 @@
+import Hero from "./components/homeCMP/Hero.js";
+
 export const metadata = {
-  title: "ArtByteVault",
+  title: "🍧",
   description: "buy and sell NFT",
-  author: "@ilkinsufi",
+  // author: "@ilkinsufi",
 };
 
 export default async function Home() {
@@ -13,6 +15,9 @@ export default async function Home() {
     // <div className="[&.active]:text-red-950 activ text-center cursor-help text-[#fdf] mt-[25px] hover:text-green-950 cursor-help duration-300">
     //   oxo
     // </div>
-    <>testt</>
+    <>
+      {" "}
+      <Hero />{" "}
+    </>
   );
 }

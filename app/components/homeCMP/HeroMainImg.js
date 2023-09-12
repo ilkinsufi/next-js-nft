@@ -1,19 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import whiteHeroImg from "public/whiteHeroImg.png";
+import whiteHeroImg from "/public/whiteHeroImg.png";
 
 const HeroMainImg = () => {
   return (
     <div className="flex justify-center items-center">
       <Image
-        src={"/whiteHeroImg.png"}
+        src={whiteHeroImg}
         width={600}
         height={600}
         objectFit="cover"
         // layout="fill"
         alt="carousel"
         // priority
-        quality="100"
+        quality={100}
       />
     </div>
   );

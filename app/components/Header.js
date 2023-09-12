@@ -52,7 +52,7 @@ const Header = () => {
               height="30"
               viewBox="0 0 26 29"
               fill="none"
-              className="drop-shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)]"
+              className={`drop-shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)]`}
             >
               <path
                 d="M0.953124 14.6942L25.7067 0.402709L25.7067 28.9856L0.953124 14.6942Z"
@@ -128,3 +128,7 @@ const Header = () => {
 };
 
 export default Header;
+
+// 40 banan = 1 azn
+// 1 mango = 3azn
+// 1 alma = 5azn

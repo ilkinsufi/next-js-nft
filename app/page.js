@@ -1,5 +1,5 @@
 import Hero from "./components/homeCMP/Hero.js";
-
+import Trending from "./components/homeCMP/Trending.js"
 export const metadata = {
   title: "🍧",
   description: "buy and sell NFT",
@@ -17,7 +17,8 @@ export default async function Home() {
     // </div>
     <>
       {" "}
-      <Hero />{" "}
+      <Hero />
+      <Trending/>{" "}
     </>
   );
 }

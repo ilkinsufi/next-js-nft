@@ -17,9 +17,7 @@ const Header = () => {
       >
         <path d="M813.77 866.551C559.202 800.429 164.954 774.256 -0.349609 769.435V-3.35846H1598.96V850.02C1443.3 883.081 1068.34 932.672 813.77 866.551Z" />
       </svg>
-      <header className="duration-200 mt-[60px] max-w-screen-2xl w-[1134px] m-auto flex justify-between items-center h-9">
-        {/* <div className="absolute top-0 left-0 w-full bg-red-400">fsdfsdfsdfsdfsdfsdf</div> */}
-
+      <header className="duration-200 mt-[60px] lg:px-8 sm:px-4 m-auto flex justify-between items-center h-9 max-w-7xl">
         <div className="flex justify-center items-center gap-[82px]">
           <div className="flex gap-[4px] justify-center items-center">
             <svg
@@ -28,6 +26,7 @@ const Header = () => {
               height="34"
               viewBox="0 0 29 34"
               fill="none"
+              className="drop-shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
             >
               <path
                 d="M14.4203 0.19165L28.7118 8.44283V24.9452L14.4203 33.1964L0.128865 24.9452V8.44283L14.4203 0.19165Z"
@@ -40,6 +39,7 @@ const Header = () => {
               height="32"
               viewBox="0 0 30 29"
               fill="none"
+              className="drop-shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
             >
               <path
                 d="M2.61387 21.8399C0.0609474 17.4181 0.0609473 11.9702 2.61387 7.54844C5.16679 3.12665 9.88479 0.402709 14.9906 0.402709C20.0965 0.402709 24.8145 3.12665 27.3674 7.54844C29.9203 11.9702 29.9203 17.4181 27.3674 21.8399C24.8145 26.2617 20.0965 28.9856 14.9906 28.9856C9.8848 28.9856 5.16679 26.2617 2.61387 21.8399Z"
@@ -52,6 +52,7 @@ const Header = () => {
               height="30"
               viewBox="0 0 26 29"
               fill="none"
+              className="drop-shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)]"
             >
               <path
                 d="M0.953124 14.6942L25.7067 0.402709L25.7067 28.9856L0.953124 14.6942Z"
@@ -59,7 +60,7 @@ const Header = () => {
               />
             </svg>
           </div>
-          <div className="flex dark:duration-700 items-center dark:bg-[black] duration-700 bg-[#F3F3F3] w-[284px] h-[52px] rounded-[20px] justify-between">
+          <div className="drop-shadow-xl flex dark:duration-700 items-center dark:bg-[black] duration-700 bg-[#F3F3F3] w-[284px] h-[52px] rounded-[20px] justify-between">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -80,39 +81,28 @@ const Header = () => {
             />
           </div>
         </div>
-        <nav>
+        <nav className="sm:hidden md:block lg:block xl:block">
           <ul className="flex text-[18px] font-normal">
             <li>
               <Link
                 href="/"
                 className={
                   pathname == "/"
-                    ? "text-black font-bold duration-300 dark:text-white"
-                    : "text-[#6B6B6B] font-normal duration-700"
-                }
-              >
-                Əsas
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/explore"
-                className={
-                  pathname == "/explore"
-                    ? "text-black font-bold duration-300 ml-[50px] dark:text-white"
-                    : "text-[#6B6B6B] font-normal duration-700 ml-[50px]"
+                    ? "text-black duration-300 font-bold dark:text-white"
+                    : "text-[#6B6B6B] font-normal drop-shadow-xl duration-200"
                 }
               >
                 Kəşf et
               </Link>
             </li>
+
             <li className="ml-[50px] mr-[81px]">
               <Link
                 href="/trending"
                 className={
                   pathname == "/trending"
                     ? "text-black font-bold duration-300 dark:text-white"
-                    : "text-[#6B6B6B] font-normal duration-700"
+                    : "text-[#6B6B6B] drop-shadow-xl font-normal duration-200"
                 }
               >
                 Trendlər🔥
@@ -123,8 +113,8 @@ const Header = () => {
                 href="/faq"
                 className={
                   pathname == "/faq"
-                    ? "text-black font-bold duration-300 dark:text-white leading-6"
-                    : "text-[#6B6B6B] font-normal duration-700 leading-6"
+                    ? "text-black duration-200 font-bold dark:text-white leading-6"
+                    : "text-[#6B6B6B] font-normal drop-shadow-xl duration-700 leading-6"
                 }
               >
                 FAQ

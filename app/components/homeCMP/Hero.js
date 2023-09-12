@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import HeroMainImg from "./HeroMainImg.js";
 
 const Hero = () => {
   return (
@@ -31,7 +32,9 @@ const Hero = () => {
           Connect Wallet
         </button>
       </div>
-      <div className="w-1/2 bg-lime-600"></div>
+      <div className="w-1/2 bg-lime-600 flex items-center justify-center">
+        <HeroMainImg />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import HeroMainImg from "./HeroMainImg.js";
 
 const Hero = () => {
   return (
@@ -32,9 +31,10 @@ const Hero = () => {
           Connect Wallet
         </button>
       </div>
-      <div className="w-1/2 bg-lime-600 flex items-center justify-center">
-        <HeroMainImg />
-      </div>
+      <div
+        className="w-1/2 bg-[url(https://images2.imgbox.com/e3/d7/SiTbE22i_o.png)] bg-contain duration-300
+bg-no-repeat flex items-center justify-center dark:bg-[url(https://images2.imgbox.com/01/80/B7A42zfL_o.png)]"
+      ></div>
     </div>
   );
 };

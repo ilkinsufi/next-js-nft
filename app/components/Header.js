@@ -120,6 +120,9 @@ const Header = () => {
                 FAQ
               </Link>
             </li>
+            <li>
+              <ThemeSwitcher />
+            </li>
           </ul>
         </nav>
       </header>

@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="az">
       <body
-        className={`${dm_sans.className} ${clash.variable} bg-white duration-700 dark:bg-[#000] dark:duration-700 selection:bg-[#FF7795] selection:text-white dark:selection:text-white`}
+        className={`${dm_sans.className} ${clash.variable} bg-[#fcfcfc] duration-700 dark:bg-[#000] dark:duration-700 selection:bg-[#FF7795] selection:text-white dark:selection:text-white`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
